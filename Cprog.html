@@ -1,0 +1,147 @@
+
+  <head>
+    
+    <link rel="stylesheet" href="css/cstyle.css">
+  </head>
+<div class="header">
+  <div class="A"><b>  * Variable * </b> </div><br>
+</div>
+    <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner top"></div>
+        <div class="spinner middle"></div>
+        <div class="spinner bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="menu">
+            <li><a href="Web.14_variable.html">Variable</a></li>
+            <li><a href="Web.13_data_type.html">Data-Types</a></li>
+            <li><a href="Web.8_Keyword.html">Keyword</a></li>
+            <li><a href="Web.9_operators.html">Operator</a></li>
+             
+            <li><a href="Web.10_comment.html">Comment</a></li>
+            <li><a href="Web.1_printfScanf.html">Printf & Scanf</a></li>
+            <li><a href="Web.2_if.html">If Statement</a></li>
+            <li><a href="Web.3_ifelse.html">If-Else</a></li>
+            <li><a href="Web.17_nested_if.html">Nested-If-Else</a></li>
+            <li><a href="Web.4_for-loop.html">For-Loop</a></li>
+            <li><a href="Web.6_Do-while.html">While-Loop</a></li>
+            <li><a href="Web.7_switch.html">Switch-Case</a></li>
+            <li><a href="Web.21_function.html">Function</a></li>
+             <li><a href="Web.22_Array.html">Array</a></li>
+            <li><a href="Web.11_break.html">Break</a></li>
+            <li><a href="Web.12_continue.html">Continue</a></li>
+
+            <li><a href="Web.15_goto.html">Goto</a></li>
+            <li><a href="Web.16_pointer.html">Pointer</a></li>
+            <li><a href="Web.18_String.html">String</a></li>
+
+            <li><a href="Web.19_Preprocessor.html">Preprocessor</a></li>
+            <li><a href="Web.20_Stuctrure.html">Stuctrure</a></li>
+            <li><a href="Web.24_union.html">Union</a></li>
+
+             <li><a href="Web.23_type casting.html">Type Casting</a></li>
+              <li><a href="Web.22_File Handling.html">File Handling</a></li>
+              <li><a href="#">End</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main">
+        
+<ul>
+<li style="font-size:3rem;margin-left:2rem"><b><u> Variables in C  </u></b></li><br>
+<p style="font-size:2rem"><mark>A variable is a name of the memory location. It is used to store data.</mark> 
+Its value can be changed, and it can be reused many times.It is a way to represent memory location through symbol 
+so that it can be easily identified.</p>
+
+<p style="font-size:2rem">the syntax to declare a variable:</p>
+
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:35rem;margin-left:10rem;padding-left:3rem;background-color:rgb(227,227,227); position: relative;">
+<p style="font-size:2rem;text-align:center">type variable_list;</p>  
+</div>
+
+<p style="font-size:2rem">The example of declaring the variable is given below:</p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:35rem;margin-left:15rem;padding-left:3rem;background-color:rgb(227,227,227)">
+<p style="font-size:2rem">
+<b style="color:green"> int</b> a; <br> 
+<b style="color:green">float</b> b;  <br>  
+<b style="color:green">char </b>c; </p>  
+</div><br>
+
+<li style="font-size:3rem;margin-left:2rem">Rules for defining variables</li>
+<p style="font-size:2rem">1) A variable can have alphabets, digits, and underscore.<br>
+2) A variable name can start with the alphabet, and underscore only. It can't start with a digit.<br>
+3) No whitespace is allowed within the variable name.<br>
+4) A variable name must not be any reserved word or keyword, e.g. int, float, etc.</p>
+
+
+<li style="font-size:3rem;margin-left:2rem">Types of Variables in C</li>
+<p style="font-size:2rem">
+1. local variable<br> 
+2. global variable<br> 
+3. static variable<br> 
+4. automatic variable<br> 
+5. external variable<br> 
+</p>
+
+<li style="font-size:3rem;margin-left:2rem">local variable </li>
+<p style="font-size:2rem"><mark>A variable that is declared inside the function or block is called a local variable.</mark></p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:25rem;margin-left:15rem;padding-left:3rem;background-color:rgb(227,227,227)">
+<p style="font-size:2rem">
+void function1()<br>
+{<br>  
+int x=10;//local variable<br>  
+}  </p><br>
+</div>
+
+<li style="font-size:3rem;margin-left:2rem">global variable</li>
+<p style="font-size:2rem"><mark>A variable that is declared outside the function or block is called a global variable.</mark>
+ Any function can change the value of the global variable. It is available to all the functions.</p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:20rem;margin-left:10rem;padding-left:3rem;background-color:rgb(227,227,227);text-align:center">
+<p style="font-size:2rem">
+int value=20;//global variable<br>  
+void function1()<br>
+{  <br>
+int x=10;//local variable <br> 
+}  </p><br>
+</div><br>
+
+<li style="font-size:3rem;margin-left:2rem">static variable </li>
+<p style="font-size:2rem"><mark>A variable that is declared with the static keyword is called static variable.</mark></p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:25rem;margin-left:15rem;padding-left:3rem;background-color:rgb(227,227,227)">
+<p style="font-size:2rem">
+void function1()<br>
+{  <br>
+int x=10;//local variable <br> 
+static int y=10;//static variable  <br>
+x=x+1; <br> 
+y=y+1; <br> 
+printf("%d,%d",x,y); <br> 
+}  </p><br>
+</div><br>
+
+<li style="font-size:3rem;margin-left:2rem"> automatic variable</li>
+<p style="font-size:2rem"><mark>All variables in C that are declared inside the block, are automatic variables by default.</mark>
+ We can explicitly declare an automatic variable using auto keyword.</p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:25rem;margin-left:15rem;padding-left:3rem;background-color:rgb(227,227,227)">
+<p style="font-size:2rem">void main()<br>
+{<br>  
+int x=10;//local variable (also automatic)<br>  
+auto int y=20;//automatic variable <br> 
+} </p><br>
+</div><br>
+
+<li style="font-size:3rem;margin-left:2rem"> external variable</li>
+<p style="font-size:2rem">We can share a variable in multiple C source files by using an external variable. 
+To declare an external variable, you need to use extern keyword.</p>
+<div style="border:0.15rem solid rgb(40,166,129);margin-right:30rem;margin-left:10rem;padding-left:3rem;background-color:rgb(227,227,227)">
+<p style="font-size:2rem;text-align:center">extern int x=10;//external variable (also global)  </p>
+</div>
+
+</ul>
+<div style="border:0.2rem solid rgb(40,166,129);margin-left:10rem;margin-right:10rem;padding-left:2rem;background-color:rgb(40,166,129);width:300px;margin-bottom:2rem;text-align:center">
+<a href="https://www.onlinegdb.com/online_html_compiler" style="font-size:2rem;color:white;">
+*Try it Yourself*</a>
+</body>
+</html>

@@ -1,0 +1,188 @@
+html
+{
+	font-size: 62.5%;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+h1
+{
+	text-align: center;
+	font-size: 5rem;
+  
+}
+
+.mk
+{
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+.parag
+{
+  color: navajowhite;
+  font-size: 4rem;
+  text-align: center;
+  padding-left: 20rem;
+}
+.con
+  {
+    text-decoration-color:tomato;
+    color: floralwhite;
+    font-size: 9rem;
+    text-align: center;
+    padding-top: 20rem;
+    margin-right: 40rem;
+    text-decoration-line: underline;
+  }
+
+nav
+{
+	text-align: right;
+	font-size: 2rem;
+	background-color: #12172b;
+	color: white;
+	padding: 1rem;
+  font-family: montserrat;
+}
+a
+{
+  text-align: center;
+	color: white;
+	padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.all
+{
+  border: 1px solid black;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+@media(max-width: 998px)
+{
+	html
+	{
+		font-size: 55%;
+	}
+}
+
+@media(max-width: 768px)
+{
+	html
+	{
+		font-size: 45%;
+	}
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+  background: url(bg24.jpg) no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.container {
+  background-color: #12172b;
+  margin: 20px 40px;
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+ 
+  cursor: pointer;
+  transition: 400ms;
+}
+
+
+.user-name {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
